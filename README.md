@@ -1,6 +1,6 @@
-# pxt-fwd-solder-3b3l
+# pxt-smart-soldering
 
-Smart Solder Kit, by Forward Education.
+Smart Soldering Kit, by Forward Education.
 
 Find us at [forwardedu.com](https://forwardedu.com/) and [learn.forwardedu.com](https://learn.forwardedu.com/). Learn more about the Smart Solder Kit on the [product page](https://forwardedu.com/products/smart-learn-to-solder-kit).
 
