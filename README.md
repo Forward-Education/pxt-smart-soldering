@@ -36,14 +36,14 @@ fwdButtons.BTN3.onEvent(jacdac.ButtonEvent.Down, function () {
 let delay = 0
 delay = 3000
 basic.forever(function () {
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.On)
+    fwdLights.YELLOW.setOnOff(false)
+    fwdLights.RED.setOnOff(true)
     basic.pause(delay)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.On)
+    fwdLights.RED.setOnOff(false)
+    fwdLights.GREEN.setOnOff(true)
     basic.pause(delay)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.On)
+    fwdLights.GREEN.setOnOff(false)
+    fwdLights.YELLOW.setOnOff(true)
     basic.pause(delay)
 })
 ```
@@ -52,40 +52,40 @@ This code supports a survey. You are looking for red, yellow, and green items. W
 
 ```blocks
 fwdButtons.BTN3.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.On)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
+    fwdLights.RED.setOnOff(true)
+    fwdLights.GREEN.setOnOff(false)
+    fwdLights.YELLOW.setOnOff(false)
     redItems += 1
     basic.showNumber(redItems)
 })
 fwdButtons.BTN2.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.On)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
+    fwdLights.YELLOW.setOnOff(true)
+    fwdLights.GREEN.setOnOff(false)
+    fwdLights.RED.setOnOff(false)
     yellowItems += 1
     basic.showNumber(yellowItems)
 })
 input.onButtonPressed(Button.A, function () {
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.On)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
+    fwdLights.GREEN.setOnOff(true)
+    fwdLights.YELLOW.setOnOff(false)
+    fwdLights.RED.setOnOff(false)
     basic.showNumber(greenItems)
     basic.pause(5000)
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.On)
+    fwdLights.GREEN.setOnOff(false)
+    fwdLights.YELLOW.setOnOff(true)
     basic.showNumber(yellowItems)
     basic.pause(5000)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.On)
+    fwdLights.YELLOW.setOnOff(false)
+    fwdLights.RED.setOnOff(true)
     basic.showNumber(redItems)
     basic.pause(5000)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
+    fwdLights.RED.setOnOff(false)
     basic.clearScreen()
 })
 fwdButtons.BTN1.onEvent(jacdac.ButtonEvent.Down, function () {
-    fwdLights.GREEN.setOnOff(fwdEnums.OnOff.On)
-    fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
-    fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
+    fwdLights.GREEN.setOnOff(true)
+    fwdLights.YELLOW.setOnOff(false)
+    fwdLights.RED.setOnOff(false)
     greenItems += 1
     basic.showNumber(greenItems)
 })
@@ -95,9 +95,9 @@ let greenItems = 0
 greenItems = 0
 redItems = 0
 yellowItems = 0
-fwdLights.GREEN.setOnOff(fwdEnums.OnOff.Off)
-fwdLights.RED.setOnOff(fwdEnums.OnOff.Off)
-fwdLights.YELLOW.setOnOff(fwdEnums.OnOff.Off)
+fwdLights.GREEN.setOnOff(false)
+fwdLights.RED.setOnOff(false)
+fwdLights.YELLOW.setOnOff(false)
 ```
 
 ## Supported Targets
