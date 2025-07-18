@@ -1,4 +1,4 @@
-# pxt-smart-soldering
+# fwd-smart-soldering
 
 Smart Soldering Kit, by Forward Education.
 
