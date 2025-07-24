@@ -7,7 +7,8 @@
         "fwd-solder-3b3l": "github:Forward-Education/pxt-fwd-modules/fwd-solder-3b3l#v1.0.8"
     },
     "files": [
-        "README.md"
+        "README.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "tests/test.ts"
