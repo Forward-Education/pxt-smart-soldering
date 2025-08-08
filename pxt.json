@@ -4,7 +4,7 @@
     "description": "Forward Education's Smart Solder Kit extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
-        "fwd-solder-3b3l": "github:Forward-Education/pxt-fwd-modules/fwd-solder-3b3l#v1.0.8"
+        "fwd-solder-3b3l": "github:Forward-Education/pxt-fwd-modules/fwd-solder-3b3l#v1.0.10"
     },
     "files": [
         "README.md",
